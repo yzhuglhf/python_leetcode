@@ -73,38 +73,26 @@ def graphql(query: str, variables: dict) -> dict:
 
 
 def fetch_problem_list() -> list[dict]:
-    """Return all non-premium Medium/Hard problems."""
-    query = """
-    query problemsetQuestionList($skip: Int!, $limit: Int!, $filters: QuestionListFilterInput) {
-      problemsetQuestionList: questionList(
-        categorySlug: ""
-        limit: $limit
-        skip: $skip
-        filters: $filters
-      ) {
-        total
-        questions: data {
-          questionFrontendId
-          title
-          titleSlug
-          difficulty
-          isPaidOnly
-          topicTags { slug }
-        }
-      }
-    }
-    """
+    """Return all non-premium Medium/Hard problems via the stable REST endpoint."""
+    req = urllib.request.Request(
+        "https://leetcode.com/api/problems/all/",
+        headers={"User-Agent": "Mozilla/5.0", "Referer": "https://leetcode.com"},
+    )
+    with urllib.request.urlopen(req, timeout=20) as resp:
+        data = json.loads(resp.read())
+
+    DIFF = {1: "Easy", 2: "Medium", 3: "Hard"}
     problems = []
-    skip = 0
-    limit = 100
-    while True:
-        data = graphql(query, {"skip": skip, "limit": limit, "filters": {}})
-        batch = data["data"]["problemsetQuestionList"]["questions"]
-        problems.extend(batch)
-        if len(problems) >= data["data"]["problemsetQuestionList"]["total"]:
-            break
-        skip += limit
-    return [p for p in problems if not p["isPaidOnly"] and p["difficulty"] in ("Medium", "Hard")]
+    for item in data["stat_status_pairs"]:
+        diff = DIFF.get(item["difficulty"]["level"])
+        if diff in ("Medium", "Hard") and not item["paid_only"]:
+            problems.append({
+                "questionFrontendId": str(item["stat"]["frontend_question_id"]),
+                "title": item["stat"]["question__title"],
+                "titleSlug": item["stat"]["question__title_slug"],
+                "difficulty": diff,
+            })
+    return problems
 
 
 def fetch_problem_detail(slug: str) -> dict:
