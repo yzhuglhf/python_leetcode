@@ -5,7 +5,7 @@ import re
 from datetime import date
 from pathlib import Path
 
-import anthropic
+import google.generativeai as genai
 import urllib.request
 
 LEETCODE_GRAPHQL = "https://leetcode.com/graphql"
@@ -162,7 +162,10 @@ def get_python_snippet(snippets: list[dict]) -> str:
 
 
 def generate(detail: dict) -> str:
-    client = anthropic.Anthropic()
+    import os
+    genai.configure(api_key=os.environ["GOOGLE_API_KEY"])
+    model = genai.GenerativeModel("gemini-2.0-flash")
+
     description = strip_html(detail["content"] or "")
     snippet = get_python_snippet(detail.get("codeSnippets") or [])
 
@@ -204,12 +207,8 @@ if __name__ == "__main__":
     assert ...
     print("All tests passed!")
 """
-    response = client.messages.create(
-        model="claude-haiku-4-5-20251001",
-        max_tokens=2048,
-        messages=[{"role": "user", "content": prompt}],
-    )
-    content = response.content[0].text
+    response = model.generate_content(prompt)
+    content = response.text
     m = re.search(r"```python\n(.*?)```", content, re.DOTALL)
     return m.group(1) if m else content
 
