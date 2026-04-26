@@ -195,7 +195,7 @@ if __name__ == "__main__":
     assert ...
     print("All tests passed!")
 """
-    response = client.models.generate_content(model="gemini-1.5-flash", contents=prompt)
+    response = client.models.generate_content(model="gemini-2.5-flash-preview-04-17", contents=prompt)
     content = response.text
     m = re.search(r"```python\n(.*?)```", content, re.DOTALL)
     return m.group(1) if m else content
