@@ -1,146 +1,207 @@
-"""Daily LeetCode solution generator — runs inside GitHub Actions."""
+"""Daily LeetCode solution generator — fetches real problems from LeetCode API."""
+import json
+import random
 import re
 from datetime import date
 from pathlib import Path
 
 import anthropic
+import urllib.request
 
-# (number, title, snake_case, topic_folder, difficulty)
-PROBLEMS = [
-    # Array
-    ("53",  "Maximum Subarray",                          "maximum_subarray",                          "array",          "Medium"),
-    ("54",  "Spiral Matrix",                             "spiral_matrix",                             "array",          "Medium"),
-    ("128", "Longest Consecutive Sequence",              "longest_consecutive_sequence",              "array",          "Medium"),
-    ("169", "Majority Element",                          "majority_element",                          "array",          "Easy"),
-    ("274", "H-Index",                                   "h_index",                                   "array",          "Medium"),
-    ("380", "Insert Delete GetRandom O(1)",               "insert_delete_getrandom",                   "array",          "Medium"),
-    ("238", "Product of Array Except Self",              "product_of_array_except_self",              "prefix_sum",     "Medium"),
-    # Two Pointers
-    ("15",  "3Sum",                                      "three_sum",                                 "two_pointers",   "Medium"),
-    ("11",  "Container With Most Water",                 "container_with_most_water",                 "two_pointers",   "Medium"),
-    # Sliding Window
-    ("3",   "Longest Substring Without Repeating Characters", "longest_substring_without_repeating_characters", "sliding_windows", "Medium"),
-    # Binary Search
-    ("33",  "Search in Rotated Sorted Array",            "search_in_rotated_sorted_array",            "binary_search",  "Medium"),
-    ("153", "Find Minimum in Rotated Sorted Array",      "find_minimum_in_rotated_sorted_array",      "binary_search",  "Medium"),
-    ("4",   "Median of Two Sorted Arrays",               "median_of_two_sorted_arrays",               "binary_search",  "Hard"),
-    # Backtracking
-    ("17",  "Letter Combinations of a Phone Number",     "letter_combinations_of_a_phone_number",     "backtrack",      "Medium"),
-    ("22",  "Generate Parentheses",                      "generate_parentheses",                      "backtrack",      "Medium"),
-    ("39",  "Combination Sum",                           "combination_sum",                           "backtrack",      "Medium"),
-    ("46",  "Permutations",                              "permutations",                              "backtrack",      "Medium"),
-    ("79",  "Word Search",                               "word_search",                               "backtrack",      "Medium"),
-    ("131", "Palindrome Partitioning",                   "palindrome_partitioning",                   "backtrack",      "Medium"),
-    ("212", "Word Search II",                            "word_search_ii",                            "backtrack",      "Hard"),
-    ("51",  "N-Queens",                                  "n_queens",                                  "backtrack",      "Hard"),
-    # DP
-    ("5",   "Longest Palindromic Substring",             "longest_palindromic_substring",             "dp",             "Medium"),
-    ("55",  "Jump Game",                                 "jump_game",                                 "dp",             "Medium"),
-    ("62",  "Unique Paths",                              "unique_paths",                              "dp",             "Medium"),
-    ("91",  "Decode Ways",                               "decode_ways",                               "dp",             "Medium"),
-    ("139", "Word Break",                                "word_break",                                "dp",             "Medium"),
-    ("152", "Maximum Product Subarray",                  "maximum_product_subarray",                  "dp",             "Medium"),
-    ("300", "Longest Increasing Subsequence",            "longest_increasing_subsequence",            "dp",             "Medium"),
-    ("322", "Coin Change",                               "coin_change",                               "dp",             "Medium"),
-    ("416", "Partition Equal Subset Sum",                "partition_equal_subset_sum",                "dp",             "Medium"),
-    ("72",  "Edit Distance",                             "edit_distance",                             "dp",             "Medium"),
-    ("10",  "Regular Expression Matching",               "regular_expression_matching",               "dp",             "Hard"),
-    ("45",  "Jump Game II",                              "jump_game_ii",                              "dp",             "Medium"),
-    # Graph / BFS / DFS
-    ("200", "Number of Islands",                         "number_of_islands",                         "dfs",            "Medium"),
-    ("207", "Course Schedule",                           "course_schedule",                           "graph",          "Medium"),
-    ("127", "Word Ladder",                               "word_ladder",                               "bfs",            "Hard"),
-    # Tree
-    ("98",  "Validate Binary Search Tree",               "validate_binary_search_tree",               "tree",           "Medium"),
-    ("102", "Binary Tree Level Order Traversal",         "binary_tree_level_order_traversal",         "tree",           "Medium"),
-    ("124", "Binary Tree Maximum Path Sum",              "binary_tree_maximum_path_sum",              "tree",           "Hard"),
-    ("297", "Serialize and Deserialize Binary Tree",     "serialize_and_deserialize_binary_tree",     "tree",           "Hard"),
-    # Design
-    ("146", "LRU Cache",                                 "lru_cache",                                 "design",         "Medium"),
-    ("295", "Find Median from Data Stream",              "find_median_from_data_stream",              "design",         "Hard"),
-    # Stack
-    ("84",  "Largest Rectangle in Histogram",            "largest_rectangle_in_histogram",            "stack",          "Hard"),
-    ("32",  "Longest Valid Parentheses",                 "longest_valid_parentheses",                 "stack",          "Hard"),
-    # Priority Queue
-    ("23",  "Merge k Sorted Lists",                      "merge_k_sorted_lists",                      "pq",             "Hard"),
-    ("215", "Kth Largest Element in an Array",           "kth_largest_element_in_an_array",           "pq",             "Medium"),
-    ("347", "Top K Frequent Elements",                   "top_k_frequent_elements",                   "pq",             "Medium"),
-    ("239", "Sliding Window Maximum",                    "sliding_window_maximum",                    "pq",             "Hard"),
-    # Two Pointers / Greedy
-    ("56",  "Merge Intervals",                           "merge_intervals",                           "greedy",         "Medium"),
-    ("435", "Non-overlapping Intervals",                 "non_overlapping_intervals",                 "greedy",         "Medium"),
-    ("621", "Task Scheduler",                            "task_scheduler",                            "greedy",         "Medium"),
-    # Misc Hard
-    ("42",  "Trapping Rain Water",                       "trapping_rain_water",                       "two_pointers",   "Hard"),
-    ("41",  "First Missing Positive",                    "first_missing_positive",                    "array",          "Hard"),
-    ("76",  "Minimum Window Substring",                  "minimum_window_substring",                  "sliding_windows","Hard"),
-]
+LEETCODE_GRAPHQL = "https://leetcode.com/graphql"
+
+TOPIC_TO_FOLDER = {
+    "array": "array",
+    "hash-table": "array",
+    "string": "string",
+    "dynamic-programming": "dp",
+    "math": "maths",
+    "sorting": "array",
+    "greedy": "greedy",
+    "depth-first-search": "dfs",
+    "binary-search": "binary_search",
+    "database": None,
+    "breadth-first-search": "bfs",
+    "tree": "tree",
+    "matrix": "matrix",
+    "bit-manipulation": "bit",
+    "two-pointers": "two_pointers",
+    "prefix-sum": "prefix_sum",
+    "heap-priority-queue": "pq",
+    "binary-tree": "tree",
+    "simulation": "array",
+    "graph": "graph",
+    "counting": "array",
+    "sliding-window": "sliding_windows",
+    "design": "design",
+    "backtracking": "backtrack",
+    "enumeration": "array",
+    "union-find": "union_find",
+    "linked-list": "linked_list",
+    "ordered-set": "design",
+    "monotonic-stack": "stack",
+    "number-theory": "maths",
+    "trie": "trie",
+    "divide-and-conquer": "dp",
+    "bitmask": "bit",
+    "recursion": "backtrack",
+    "stack": "stack",
+    "queue": "stack",
+    "memoization": "dp",
+    "segment-tree": "segment_tree",
+    "geometry": "maths",
+    "topological-sort": "graph",
+    "binary-search-tree": "tree",
+    "hash-function": "design",
+    "shortest-path": "graph",
+}
+
+
+def graphql(query: str, variables: dict) -> dict:
+    payload = json.dumps({"query": query, "variables": variables}).encode()
+    req = urllib.request.Request(
+        LEETCODE_GRAPHQL,
+        data=payload,
+        headers={
+            "Content-Type": "application/json",
+            "User-Agent": "Mozilla/5.0",
+            "Referer": "https://leetcode.com",
+        },
+    )
+    with urllib.request.urlopen(req, timeout=15) as resp:
+        return json.loads(resp.read())
+
+
+def fetch_problem_list() -> list[dict]:
+    """Return all non-premium Medium/Hard problems."""
+    query = """
+    query problemsetQuestionList($skip: Int!, $limit: Int!, $filters: QuestionListFilterInput) {
+      problemsetQuestionList: questionList(
+        categorySlug: ""
+        limit: $limit
+        skip: $skip
+        filters: $filters
+      ) {
+        total
+        questions: data {
+          questionFrontendId
+          title
+          titleSlug
+          difficulty
+          isPaidOnly
+          topicTags { slug }
+        }
+      }
+    }
+    """
+    problems = []
+    skip = 0
+    limit = 100
+    while True:
+        data = graphql(query, {"skip": skip, "limit": limit, "filters": {}})
+        batch = data["data"]["problemsetQuestionList"]["questions"]
+        problems.extend(batch)
+        if len(problems) >= data["data"]["problemsetQuestionList"]["total"]:
+            break
+        skip += limit
+    return [p for p in problems if not p["isPaidOnly"] and p["difficulty"] in ("Medium", "Hard")]
+
+
+def fetch_problem_detail(slug: str) -> dict:
+    query = """
+    query questionData($titleSlug: String!) {
+      question(titleSlug: $titleSlug) {
+        questionId
+        title
+        difficulty
+        content
+        topicTags { name slug }
+        codeSnippets { langSlug code }
+      }
+    }
+    """
+    data = graphql(query, {"titleSlug": slug})
+    return data["data"]["question"]
 
 
 def get_existing_numbers() -> set[str]:
-    """Collect all LeetCode problem numbers already in the repo."""
     existing = set()
     for py_file in Path(".").rglob("*.py"):
         if ".github" in py_file.parts:
             continue
-        # Match filenames like "123. Title.py" or "123_title.py"
         m = re.match(r"^(\d+)[.\s_-]", py_file.name)
         if m:
             existing.add(m.group(1))
-        # Also match plain snake_case names (our own additions)
         existing.add(py_file.stem)
     return existing
 
 
-def pick_problem(existing: set[str]) -> tuple:
-    today = date.today()
-    # Alternate Medium / Hard by day parity
-    preferred = "Medium" if today.day % 2 == 1 else "Hard"
-    fallback  = "Hard"   if preferred == "Medium" else "Medium"
-
-    for difficulty in (preferred, fallback):
-        for number, title, snake, topic, diff in PROBLEMS:
-            if diff == difficulty and number not in existing and snake not in existing:
-                return number, title, snake, topic, difficulty
-    raise RuntimeError("All problems already solved!")
+def pick_topic_folder(topic_tags: list[dict]) -> str:
+    for tag in topic_tags:
+        folder = TOPIC_TO_FOLDER.get(tag["slug"])
+        if folder:
+            return folder
+    return "array"
 
 
-def generate(number: str, title: str, difficulty: str, topic: str) -> str:
+def strip_html(text: str) -> str:
+    text = re.sub(r"<[^>]+>", "", text)
+    text = re.sub(r"&nbsp;", " ", text)
+    text = re.sub(r"&lt;", "<", text)
+    text = re.sub(r"&gt;", ">", text)
+    text = re.sub(r"&amp;", "&", text)
+    text = re.sub(r"\n{3,}", "\n\n", text)
+    return text.strip()
+
+
+def get_python_snippet(snippets: list[dict]) -> str:
+    for s in snippets:
+        if s["langSlug"] == "python3":
+            return s["code"]
+    return "class Solution:\n    pass"
+
+
+def generate(detail: dict) -> str:
     client = anthropic.Anthropic()
-    prompt = f"""Write a complete Python LeetCode solution for:
-Problem #{number}: {title} (Difficulty: {difficulty}, Topic: {topic})
+    description = strip_html(detail["content"] or "")
+    snippet = get_python_snippet(detail.get("codeSnippets") or [])
+
+    prompt = f"""Solve this LeetCode problem in Python.
+
+Problem #{detail['questionId']}: {detail['title']} ({detail['difficulty']})
+
+{description}
+
+Starting code:
+{snippet}
 
 Output ONLY a valid .py file — no markdown fences — with this exact structure:
 
 \"\"\"
-{title} (LeetCode #{number})
-Difficulty: {difficulty}
+{detail['title']} (LeetCode #{detail['questionId']})
+Difficulty: {detail['difficulty']}
 
 Description:
-<concise problem description>
+<concise 2-3 sentence summary>
 
 Example:
 <one clear input/output example>
 
 Approach:
-<one paragraph explaining the algorithm and why it works>
+<one paragraph explaining the algorithm>
 
 Time Complexity: O(...)
 Space Complexity: O(...)
 \"\"\"
 from typing import List, Optional
 
-
-class Solution:
-    def methodName(self, ...) -> ...:
-        ...
-
+<solution code using the provided class/method signature>
 
 if __name__ == "__main__":
     s = Solution()
-    assert s.methodName(...) == ...
-    assert s.methodName(...) == ...
-    assert s.methodName(...) == ...
+    assert ...
+    assert ...
+    assert ...
     print("All tests passed!")
 """
     response = client.messages.create(
@@ -149,7 +210,6 @@ if __name__ == "__main__":
         messages=[{"role": "user", "content": prompt}],
     )
     content = response.content[0].text
-    # Strip markdown fences if the model adds them anyway
     m = re.search(r"```python\n(.*?)```", content, re.DOTALL)
     return m.group(1) if m else content
 
@@ -157,15 +217,14 @@ if __name__ == "__main__":
 def extract_approach(content: str) -> str:
     m = re.search(r"Approach:\n(.*?)(?:\n\nTime|Time Complexity)", content, re.DOTALL)
     if m:
-        first_line = m.group(1).strip().split("\n")[0]
-        return first_line[:60].rstrip(".,")
+        return m.group(1).strip().split("\n")[0][:60].rstrip(".,")
     return "optimal solution"
 
 
-def update_readme(title: str, number: str, difficulty: str, topic: str, filename: str) -> None:
+def update_readme(title: str, number: str, difficulty: str, folder: str, filename: str) -> None:
     readme = Path("README.md")
     today = date.today().isoformat()
-    row = f"| [{title}]({topic}/{filename}) | #{number} | {difficulty} | {today} |"
+    row = f"| [{title}]({folder}/{filename}) | #{number} | {difficulty} | {today} |"
     if not readme.exists():
         readme.write_text(
             "# LeetCode Solutions\n\n"
@@ -174,27 +233,45 @@ def update_readme(title: str, number: str, difficulty: str, topic: str, filename
             f"{row}\n"
         )
     else:
-        text = readme.read_text().rstrip()
-        readme.write_text(text + "\n" + row + "\n")
+        readme.write_text(readme.read_text().rstrip() + "\n" + row + "\n")
 
 
 def main() -> None:
     existing = get_existing_numbers()
-    number, title, snake, topic, difficulty = pick_problem(existing)
-    print(f"Generating: {difficulty} #{number} {title} → {topic}/")
 
-    content = generate(number, title, difficulty, topic)
+    print("Fetching problem list from LeetCode...")
+    problems = fetch_problem_list()
 
-    Path(topic).mkdir(exist_ok=True)
-    filename = f"{number}. {title}.py"
-    filepath = Path(topic) / filename
+    today = date.today()
+    preferred = "Medium" if today.day % 2 == 1 else "Hard"
+
+    # Filter unsolved, prefer today's difficulty
+    pool = [p for p in problems if p["questionFrontendId"] not in existing
+            and p["difficulty"] == preferred]
+    if not pool:
+        pool = [p for p in problems if p["questionFrontendId"] not in existing]
+
+    if not pool:
+        print("All problems solved!")
+        return
+
+    chosen = random.choice(pool[:50])  # pick randomly from first 50 unsolved
+    print(f"Chosen: #{chosen['questionFrontendId']} {chosen['title']} ({chosen['difficulty']})")
+
+    detail = fetch_problem_detail(chosen["titleSlug"])
+    folder = pick_topic_folder(detail["topicTags"])
+    content = generate(detail)
+
+    Path(folder).mkdir(exist_ok=True)
+    filename = f"{detail['questionId']}. {detail['title']}.py"
+    filepath = Path(folder) / filename
     filepath.write_text(content)
     print(f"Written: {filepath}")
 
-    update_readme(title, number, difficulty, topic, filename)
+    update_readme(detail["title"], detail["questionId"], detail["difficulty"], folder, filename)
 
     approach = extract_approach(content)
-    commit_msg = f"Add {difficulty}: {title} - {approach}"
+    commit_msg = f"Add {detail['difficulty']}: {detail['title']} - {approach}"
     Path("/tmp/commit_msg.txt").write_text(commit_msg)
     print(f"Commit: {commit_msg}")
 
