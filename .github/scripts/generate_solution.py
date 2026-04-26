@@ -5,7 +5,7 @@ import re
 from datetime import date
 from pathlib import Path
 
-import google.generativeai as genai
+from google import genai
 import urllib.request
 
 LEETCODE_GRAPHQL = "https://leetcode.com/graphql"
@@ -151,8 +151,8 @@ def get_python_snippet(snippets: list[dict]) -> str:
 
 def generate(detail: dict) -> str:
     import os
-    genai.configure(api_key=os.environ["GOOGLE_API_KEY"])
-    model = genai.GenerativeModel("gemini-2.0-flash")
+    client = genai.Client(api_key=os.environ["GOOGLE_API_KEY"])
+
 
     description = strip_html(detail["content"] or "")
     snippet = get_python_snippet(detail.get("codeSnippets") or [])
@@ -195,7 +195,7 @@ if __name__ == "__main__":
     assert ...
     print("All tests passed!")
 """
-    response = model.generate_content(prompt)
+    response = client.models.generate_content(model="gemini-2.0-flash", contents=prompt)
     content = response.text
     m = re.search(r"```python\n(.*?)```", content, re.DOTALL)
     return m.group(1) if m else content
