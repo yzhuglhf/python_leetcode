@@ -2,7 +2,7 @@ name: Daily LeetCode Solution
 
 on:
   schedule:
-    - cron: '55 18 * * *'  # 11:55 AM LA (PDT / UTC-7)
+    - cron: '0 3 * * *'  # 8:00 PM LA (PDT / UTC-7)
   workflow_dispatch:        # Allow manual trigger from GitHub UI
 
 permissions:
