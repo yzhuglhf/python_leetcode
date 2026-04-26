@@ -112,15 +112,15 @@ def fetch_problem_detail(slug: str) -> dict:
     return data["data"]["question"]
 
 
-def get_existing_numbers() -> set[str]:
+def get_existing_slugs() -> set[str]:
     existing = set()
     for py_file in Path(".").rglob("*.py"):
         if ".github" in py_file.parts:
             continue
-        m = re.match(r"^(\d+)[.\s_-]", py_file.name)
+        existing.add(py_file.stem)
+        m = re.match(r"^(\d+)[.\s]", py_file.name)
         if m:
             existing.add(m.group(1))
-        existing.add(py_file.stem)
     return existing
 
 
@@ -208,15 +208,15 @@ def extract_approach(content: str) -> str:
     return "optimal solution"
 
 
-def update_readme(title: str, number: str, difficulty: str, folder: str, filename: str) -> None:
+def update_readme(title: str, difficulty: str, folder: str, filename: str) -> None:
     readme = Path("README.md")
     today = date.today().isoformat()
-    row = f"| [{title}]({folder}/{filename}) | #{number} | {difficulty} | {today} |"
+    row = f"| [{title}]({folder}/{filename}) | {difficulty} | {today} |"
     if not readme.exists():
         readme.write_text(
             "# LeetCode Solutions\n\n"
-            "| Problem | Number | Difficulty | Date |\n"
-            "|---------|--------|------------|------|\n"
+            "| Problem | Difficulty | Date |\n"
+            "|---------|------------|------|\n"
             f"{row}\n"
         )
     else:
@@ -224,7 +224,7 @@ def update_readme(title: str, number: str, difficulty: str, folder: str, filenam
 
 
 def main() -> None:
-    existing = get_existing_numbers()
+    existing = get_existing_slugs()
 
     print("Fetching problem list from LeetCode...")
     problems = fetch_problem_list()
@@ -232,11 +232,15 @@ def main() -> None:
     today = date.today()
     preferred = "Medium" if today.day % 2 == 1 else "Hard"
 
-    # Filter unsolved, prefer today's difficulty
-    pool = [p for p in problems if p["questionFrontendId"] not in existing
+    # Filter unsolved by slug and number prefix
+    pool = [p for p in problems
+            if p["titleSlug"] not in existing
+            and p["questionFrontendId"] not in existing
             and p["difficulty"] == preferred]
     if not pool:
-        pool = [p for p in problems if p["questionFrontendId"] not in existing]
+        pool = [p for p in problems
+                if p["titleSlug"] not in existing
+                and p["questionFrontendId"] not in existing]
 
     if not pool:
         print("All problems solved!")
@@ -250,12 +254,12 @@ def main() -> None:
     content = generate(detail)
 
     Path(folder).mkdir(exist_ok=True)
-    filename = f"{detail['questionId']}. {detail['title']}.py"
+    filename = f"{chosen['titleSlug']}.py"  # e.g. two-sum.py
     filepath = Path(folder) / filename
     filepath.write_text(content)
     print(f"Written: {filepath}")
 
-    update_readme(detail["title"], detail["questionId"], detail["difficulty"], folder, filename)
+    update_readme(detail["title"], detail["difficulty"], folder, filename)
 
     approach = extract_approach(content)
     commit_msg = f"Add {detail['difficulty']}: {detail['title']} - {approach}"
