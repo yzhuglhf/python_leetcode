@@ -3,3 +3,4 @@
 | Problem | Number | Difficulty | Date |
 |---------|--------|------------|------|
 | [Median of Two Sorted Arrays](hard/median_of_two_sorted_arrays.py) | #4 | Hard | 2026-04-26 |
+| [Sum of Sortable Integers](array/4257. Sum of Sortable Integers.py) | #4257 | Hard | 2026-04-26 |
