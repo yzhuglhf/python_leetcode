@@ -159,7 +159,7 @@ def generate(detail: dict) -> str:
 
     prompt = f"""Solve this LeetCode problem in Python.
 
-Problem #{detail['questionId']}: {detail['title']} ({detail['difficulty']})
+Problem: {detail['title']} ({detail['difficulty']})
 
 {description}
 
@@ -169,7 +169,7 @@ Starting code:
 Output ONLY a valid .py file — no markdown fences — with this exact structure:
 
 \"\"\"
-{detail['title']} (LeetCode #{detail['questionId']})
+{detail['title']}
 Difficulty: {detail['difficulty']}
 
 Description:
