@@ -7,3 +7,4 @@
 | [Angles of a Triangle](array/angles-of-a-triangle.py) | Medium | 2026-04-27 |
 | [Lexicographically Smallest String After Deleting Duplicate Characters](array/lexicographically-smallest-string-after-deleting-duplicate-characters.py) | Hard | 2026-04-28 |
 | [First Element with Unique Frequency](array/first-element-with-unique-frequency.py) | Medium | 2026-04-29 |
+| [Minimum Deletions to Make Alternating Substring](string/minimum-deletions-to-make-alternating-substring.py) | Hard | 2026-04-30 |
