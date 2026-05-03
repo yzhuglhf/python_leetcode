@@ -10,3 +10,4 @@
 | [Minimum Deletions to Make Alternating Substring](string/minimum-deletions-to-make-alternating-substring.py) | Hard | 2026-04-30 |
 | [Pythagorean Distance Nodes in a Tree](tree/pythagorean-distance-nodes-in-a-tree.py) | Medium | 2026-05-01 |
 | [Good Subsequence Queries](array/good-subsequence-queries.py) | Hard | 2026-05-02 |
+| [Compare Sums of Bitonic Parts](array/compare-sums-of-bitonic-parts.py) | Medium | 2026-05-03 |
