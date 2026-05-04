@@ -11,3 +11,4 @@
 | [Pythagorean Distance Nodes in a Tree](tree/pythagorean-distance-nodes-in-a-tree.py) | Medium | 2026-05-01 |
 | [Good Subsequence Queries](array/good-subsequence-queries.py) | Hard | 2026-05-02 |
 | [Compare Sums of Bitonic Parts](array/compare-sums-of-bitonic-parts.py) | Medium | 2026-05-03 |
+| [K-th Smallest Remaining Even Integer in Subarray Queries](array/k-th-smallest-remaining-even-integer-in-subarray-queries.py) | Hard | 2026-05-04 |
