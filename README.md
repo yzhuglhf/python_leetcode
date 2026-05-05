@@ -12,3 +12,4 @@
 | [Good Subsequence Queries](array/good-subsequence-queries.py) | Hard | 2026-05-02 |
 | [Compare Sums of Bitonic Parts](array/compare-sums-of-bitonic-parts.py) | Medium | 2026-05-03 |
 | [K-th Smallest Remaining Even Integer in Subarray Queries](array/k-th-smallest-remaining-even-integer-in-subarray-queries.py) | Hard | 2026-05-04 |
+| [Longest Balanced Substring After One Swap](array/longest-balanced-substring-after-one-swap.py) | Medium | 2026-05-05 |
