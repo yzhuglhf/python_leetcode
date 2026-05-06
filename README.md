@@ -13,3 +13,4 @@
 | [Compare Sums of Bitonic Parts](array/compare-sums-of-bitonic-parts.py) | Medium | 2026-05-03 |
 | [K-th Smallest Remaining Even Integer in Subarray Queries](array/k-th-smallest-remaining-even-integer-in-subarray-queries.py) | Hard | 2026-05-04 |
 | [Longest Balanced Substring After One Swap](array/longest-balanced-substring-after-one-swap.py) | Medium | 2026-05-05 |
+| [Count Distinct Subarrays Divisible by K in Sorted Array](array/count-distinct-subarrays-divisible-by-k-in-sorted-array.py) | Hard | 2026-05-06 |
