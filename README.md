@@ -15,3 +15,4 @@
 | [Longest Balanced Substring After One Swap](array/longest-balanced-substring-after-one-swap.py) | Medium | 2026-05-05 |
 | [Count Distinct Subarrays Divisible by K in Sorted Array](array/count-distinct-subarrays-divisible-by-k-in-sorted-array.py) | Hard | 2026-05-06 |
 | [Number of Prefix Connected Groups](array/number-of-prefix-connected-groups.py) | Medium | 2026-05-07 |
+| [Count Stable Subarrays](array/count-stable-subarrays.py) | Hard | 2026-05-08 |
