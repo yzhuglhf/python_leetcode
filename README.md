@@ -16,3 +16,4 @@
 | [Count Distinct Subarrays Divisible by K in Sorted Array](array/count-distinct-subarrays-divisible-by-k-in-sorted-array.py) | Hard | 2026-05-06 |
 | [Number of Prefix Connected Groups](array/number-of-prefix-connected-groups.py) | Medium | 2026-05-07 |
 | [Count Stable Subarrays](array/count-stable-subarrays.py) | Hard | 2026-05-08 |
+| [Count Commas in Range II](maths/count-commas-in-range-ii.py) | Medium | 2026-05-09 |
