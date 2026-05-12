@@ -19,3 +19,4 @@
 | [Count Commas in Range II](maths/count-commas-in-range-ii.py) | Medium | 2026-05-09 |
 | [Count Non Decreasing Arrays With Given Digit Sums](array/count-non-decreasing-arrays-with-given-digit-sums.py) | Hard | 2026-05-10 |
 | [Minimum Absolute Distance Between Mirror Pairs](array/minimum-absolute-distance-between-mirror-pairs.py) | Medium | 2026-05-11 |
+| [Maximum Points Activated with One Addition](array/maximum-points-activated-with-one-addition.py) | Hard | 2026-05-12 |
