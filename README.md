@@ -21,3 +21,4 @@
 | [Minimum Absolute Distance Between Mirror Pairs](array/minimum-absolute-distance-between-mirror-pairs.py) | Medium | 2026-05-11 |
 | [Maximum Points Activated with One Addition](array/maximum-points-activated-with-one-addition.py) | Hard | 2026-05-12 |
 | [Merge Adjacent Equal Elements](array/merge-adjacent-equal-elements.py) | Medium | 2026-05-13 |
+| [Minimum Cost to Merge Sorted Lists](array/minimum-cost-to-merge-sorted-lists.py) | Hard | 2026-05-14 |
