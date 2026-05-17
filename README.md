@@ -24,3 +24,4 @@
 | [Minimum Cost to Merge Sorted Lists](array/minimum-cost-to-merge-sorted-lists.py) | Hard | 2026-05-14 |
 | [Minimum Cost to Acquire Required Items](maths/minimum-cost-to-acquire-required-items.py) | Medium | 2026-05-15 |
 | [Find Users with Persistent Behavior Patterns](array/find-users-with-persistent-behavior-patterns.py) | Hard | 2026-05-16 |
+| [Minimum Bitwise OR From Grid](array/minimum-bitwise-or-from-grid.py) | Medium | 2026-05-17 |
