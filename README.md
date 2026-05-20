@@ -26,3 +26,4 @@
 | [Find Users with Persistent Behavior Patterns](array/find-users-with-persistent-behavior-patterns.py) | Hard | 2026-05-16 |
 | [Minimum Bitwise OR From Grid](array/minimum-bitwise-or-from-grid.py) | Medium | 2026-05-17 |
 | [Smallest All-Ones Multiple](array/smallest-all-ones-multiple.py) | Medium | 2026-05-19 |
+| [Number of Balanced Integers in a Range](dp/number-of-balanced-integers-in-a-range.py) | Hard | 2026-05-20 |
