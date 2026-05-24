@@ -29,3 +29,4 @@
 | [Number of Balanced Integers in a Range](dp/number-of-balanced-integers-in-a-range.py) | Hard | 2026-05-20 |
 | [Minimum Operations to Reach Target Array](array/minimum-operations-to-reach-target-array.py) | Medium | 2026-05-21 |
 | [Minimum Operations to Equalize Subarrays](array/minimum-operations-to-equalize-subarrays.py) | Hard | 2026-05-22 |
+| [Maximum Walls Destroyed by Robots](array/maximum-walls-destroyed-by-robots.py) | Hard | 2026-05-24 |
