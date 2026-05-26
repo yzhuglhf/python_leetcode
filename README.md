@@ -31,3 +31,4 @@
 | [Minimum Operations to Equalize Subarrays](array/minimum-operations-to-equalize-subarrays.py) | Hard | 2026-05-22 |
 | [Maximum Walls Destroyed by Robots](array/maximum-walls-destroyed-by-robots.py) | Hard | 2026-05-24 |
 | [Construct Uniform Parity Array II](array/construct-uniform-parity-array-ii.py) | Medium | 2026-05-25 |
+| [Maximize Alternating Sum Using Swaps](array/maximize-alternating-sum-using-swaps.py) | Hard | 2026-05-26 |
