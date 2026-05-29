@@ -33,3 +33,4 @@
 | [Construct Uniform Parity Array II](array/construct-uniform-parity-array-ii.py) | Medium | 2026-05-25 |
 | [Maximize Alternating Sum Using Swaps](array/maximize-alternating-sum-using-swaps.py) | Hard | 2026-05-26 |
 | [Minimum Cost to Buy Apples II](array/minimum-cost-to-buy-apples-ii.py) | Hard | 2026-05-28 |
+| [Total Score of Dungeon Runs](array/total-score-of-dungeon-runs.py) | Medium | 2026-05-29 |
