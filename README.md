@@ -38,3 +38,4 @@
 | [Count Elements With at Least K Greater Values](array/count-elements-with-at-least-k-greater-values.py) | Medium | 2026-05-31 |
 | [Maximum Sum of Three Numbers Divisible by Three](array/maximum-sum-of-three-numbers-divisible-by-three.py) | Medium | 2026-06-03 |
 | [Longest Balanced Subarray II](array/longest-balanced-subarray-ii.py) | Hard | 2026-06-04 |
+| [Incremental Even-Weighted Cycle Queries](union_find/incremental-even-weighted-cycle-queries.py) | Hard | 2026-06-06 |
