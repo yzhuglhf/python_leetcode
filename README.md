@@ -40,3 +40,4 @@
 | [Longest Balanced Subarray II](array/longest-balanced-subarray-ii.py) | Hard | 2026-06-04 |
 | [Incremental Even-Weighted Cycle Queries](union_find/incremental-even-weighted-cycle-queries.py) | Hard | 2026-06-06 |
 | [Integers With Multiple Sum of Two Cubes](array/integers-with-multiple-sum-of-two-cubes.py) | Medium | 2026-06-13 |
+| [Count Digit Appearances](array/count-digit-appearances.py) | Medium | 2026-06-15 |
