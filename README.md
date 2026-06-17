@@ -42,3 +42,4 @@
 | [Integers With Multiple Sum of Two Cubes](array/integers-with-multiple-sum-of-two-cubes.py) | Medium | 2026-06-13 |
 | [Count Digit Appearances](array/count-digit-appearances.py) | Medium | 2026-06-15 |
 | [Number of Stable Subsequences](array/number-of-stable-subsequences.py) | Hard | 2026-06-16 |
+| [Minimum XOR Path in a Grid](array/minimum-xor-path-in-a-grid.py) | Medium | 2026-06-17 |
