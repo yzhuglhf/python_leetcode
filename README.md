@@ -44,3 +44,4 @@
 | [Number of Stable Subsequences](array/number-of-stable-subsequences.py) | Hard | 2026-06-16 |
 | [Minimum XOR Path in a Grid](array/minimum-xor-path-in-a-grid.py) | Medium | 2026-06-17 |
 | [Count Subarrays With Majority Element II](array/count-subarrays-with-majority-element-ii.py) | Hard | 2026-06-18 |
+| [Maximum Score of a Split](array/maximum-score-of-a-split.py) | Medium | 2026-06-19 |
