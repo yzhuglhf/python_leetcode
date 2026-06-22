@@ -46,3 +46,4 @@
 | [Count Subarrays With Majority Element II](array/count-subarrays-with-majority-element-ii.py) | Hard | 2026-06-18 |
 | [Maximum Score of a Split](array/maximum-score-of-a-split.py) | Medium | 2026-06-19 |
 | [Smallest Stable Index II](array/smallest-stable-index-ii.py) | Medium | 2026-06-21 |
+| [Maximum Score with Co-Prime Element](array/maximum-score-with-co-prime-element.py) | Hard | 2026-06-22 |
