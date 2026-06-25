@@ -48,3 +48,4 @@
 | [Smallest Stable Index II](array/smallest-stable-index-ii.py) | Medium | 2026-06-21 |
 | [Maximum Score with Co-Prime Element](array/maximum-score-with-co-prime-element.py) | Hard | 2026-06-22 |
 | [Count Sequences to K](array/count-sequences-to-k.py) | Hard | 2026-06-24 |
+| [Minimum Number of Operations to Have Distinct Elements](array/minimum-number-of-operations-to-have-distinct-elements.py) | Medium | 2026-06-25 |
