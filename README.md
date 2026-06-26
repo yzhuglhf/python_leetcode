@@ -49,3 +49,4 @@
 | [Maximum Score with Co-Prime Element](array/maximum-score-with-co-prime-element.py) | Hard | 2026-06-22 |
 | [Count Sequences to K](array/count-sequences-to-k.py) | Hard | 2026-06-24 |
 | [Minimum Number of Operations to Have Distinct Elements](array/minimum-number-of-operations-to-have-distinct-elements.py) | Medium | 2026-06-25 |
+| [Count Non Adjacent Subsets in a Rooted Tree](array/count-non-adjacent-subsets-in-a-rooted-tree.py) | Hard | 2026-06-26 |
