@@ -53,3 +53,4 @@
 | [Sort Vowels by Frequency](string/sort-vowels-by-frequency.py) | Medium | 2026-06-27 |
 | [Palindromic Path Queries in a Tree](array/palindromic-path-queries-in-a-tree.py) | Hard | 2026-06-30 |
 | [Minimum Prefix Removal to Make Array Strictly Increasing](array/minimum-prefix-removal-to-make-array-strictly-increasing.py) | Medium | 2026-07-01 |
+| [Minimum Cost to Partition a Binary String](string/minimum-cost-to-partition-a-binary-string.py) | Hard | 2026-07-02 |
