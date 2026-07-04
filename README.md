@@ -55,3 +55,4 @@
 | [Minimum Prefix Removal to Make Array Strictly Increasing](array/minimum-prefix-removal-to-make-array-strictly-increasing.py) | Medium | 2026-07-01 |
 | [Minimum Cost to Partition a Binary String](string/minimum-cost-to-partition-a-binary-string.py) | Hard | 2026-07-02 |
 | [Password Strength](array/password-strength.py) | Medium | 2026-07-03 |
+| [Longest Alternating Subarray After Removing At Most One Element](array/longest-alternating-subarray-after-removing-at-most-one-element.py) | Hard | 2026-07-04 |
