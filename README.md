@@ -57,3 +57,4 @@
 | [Password Strength](array/password-strength.py) | Medium | 2026-07-03 |
 | [Longest Alternating Subarray After Removing At Most One Element](array/longest-alternating-subarray-after-removing-at-most-one-element.py) | Hard | 2026-07-04 |
 | [Concatenate Non-Zero Digits and Multiply by Sum II](maths/concatenate-non-zero-digits-and-multiply-by-sum-ii.py) | Medium | 2026-07-05 |
+| [Count Routes to Climb a Rectangular Grid](array/count-routes-to-climb-a-rectangular-grid.py) | Hard | 2026-07-06 |
