@@ -59,3 +59,4 @@
 | [Concatenate Non-Zero Digits and Multiply by Sum II](maths/concatenate-non-zero-digits-and-multiply-by-sum-ii.py) | Medium | 2026-07-05 |
 | [Count Routes to Climb a Rectangular Grid](array/count-routes-to-climb-a-rectangular-grid.py) | Hard | 2026-07-06 |
 | [Sum of Primes Between Number and Its Reverse](maths/sum-of-primes-between-number-and-its-reverse.py) | Medium | 2026-07-07 |
+| [Count Good Integers on a Grid Path](dp/count-good-integers-on-a-grid-path.py) | Hard | 2026-07-08 |
