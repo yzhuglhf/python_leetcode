@@ -60,3 +60,4 @@
 | [Count Routes to Climb a Rectangular Grid](array/count-routes-to-climb-a-rectangular-grid.py) | Hard | 2026-07-06 |
 | [Sum of Primes Between Number and Its Reverse](maths/sum-of-primes-between-number-and-its-reverse.py) | Medium | 2026-07-07 |
 | [Count Good Integers on a Grid Path](dp/count-good-integers-on-a-grid-path.py) | Hard | 2026-07-08 |
+| [Minimum Increase to Maximize Special Indices](array/minimum-increase-to-maximize-special-indices.py) | Medium | 2026-07-09 |
