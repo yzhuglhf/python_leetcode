@@ -62,3 +62,4 @@
 | [Count Good Integers on a Grid Path](dp/count-good-integers-on-a-grid-path.py) | Hard | 2026-07-08 |
 | [Minimum Increase to Maximize Special Indices](array/minimum-increase-to-maximize-special-indices.py) | Medium | 2026-07-09 |
 | [Lexicographically Smallest Palindromic Permutation Greater Than Target](two_pointers/lexicographically-smallest-palindromic-permutation-greater-than-target.py) | Hard | 2026-07-10 |
+| [Final Element After Subarray Deletions](array/final-element-after-subarray-deletions.py) | Medium | 2026-07-11 |
