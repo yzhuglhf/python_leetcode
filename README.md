@@ -64,3 +64,4 @@
 | [Lexicographically Smallest Palindromic Permutation Greater Than Target](two_pointers/lexicographically-smallest-palindromic-permutation-greater-than-target.py) | Hard | 2026-07-10 |
 | [Final Element After Subarray Deletions](array/final-element-after-subarray-deletions.py) | Medium | 2026-07-11 |
 | [Find Zombie Sessions](array/find-zombie-sessions.py) | Hard | 2026-07-12 |
+| [Frequency Balance Subarray](array/frequency-balance-subarray.py) | Medium | 2026-07-13 |
