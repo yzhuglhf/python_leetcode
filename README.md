@@ -67,3 +67,4 @@
 | [Frequency Balance Subarray](array/frequency-balance-subarray.py) | Medium | 2026-07-13 |
 | [Sum of Beautiful Subsequences](array/sum-of-beautiful-subsequences.py) | Hard | 2026-07-14 |
 | [Direction Assignments with Exactly K Visible People](maths/direction-assignments-with-exactly-k-visible-people.py) | Medium | 2026-07-15 |
+| [Find Emotionally Consistent Users](array/find-emotionally-consistent-users.py) | Medium | 2026-07-17 |
