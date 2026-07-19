@@ -69,3 +69,4 @@
 | [Direction Assignments with Exactly K Visible People](maths/direction-assignments-with-exactly-k-visible-people.py) | Medium | 2026-07-15 |
 | [Find Emotionally Consistent Users](array/find-emotionally-consistent-users.py) | Medium | 2026-07-17 |
 | [Total Sum of Interaction Cost in Tree Groups](array/total-sum-of-interaction-cost-in-tree-groups.py) | Hard | 2026-07-18 |
+| [Design Event Manager](array/design-event-manager.py) | Medium | 2026-07-19 |
