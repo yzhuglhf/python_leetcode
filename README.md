@@ -70,3 +70,4 @@
 | [Find Emotionally Consistent Users](array/find-emotionally-consistent-users.py) | Medium | 2026-07-17 |
 | [Total Sum of Interaction Cost in Tree Groups](array/total-sum-of-interaction-cost-in-tree-groups.py) | Hard | 2026-07-18 |
 | [Design Event Manager](array/design-event-manager.py) | Medium | 2026-07-19 |
+| [Minimum Cost to Convert String III](array/minimum-cost-to-convert-string-iii.py) | Hard | 2026-07-20 |
