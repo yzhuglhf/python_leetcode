@@ -72,3 +72,4 @@
 | [Design Event Manager](array/design-event-manager.py) | Medium | 2026-07-19 |
 | [Minimum Cost to Convert String III](array/minimum-cost-to-convert-string-iii.py) | Hard | 2026-07-20 |
 | [Minimum Operations to Transform Array into Alternating Prime](array/minimum-operations-to-transform-array-into-alternating-prime.py) | Medium | 2026-07-21 |
+| [Maximum Sum of Alternating Subsequence With Distance at Least K](array/maximum-sum-of-alternating-subsequence-with-distance-at-least-k.py) | Hard | 2026-07-22 |
