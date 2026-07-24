@@ -74,3 +74,4 @@
 | [Minimum Operations to Transform Array into Alternating Prime](array/minimum-operations-to-transform-array-into-alternating-prime.py) | Medium | 2026-07-21 |
 | [Maximum Sum of Alternating Subsequence With Distance at Least K](array/maximum-sum-of-alternating-subsequence-with-distance-at-least-k.py) | Hard | 2026-07-22 |
 | [Rotate Non Negative Elements](array/rotate-non-negative-elements.py) | Medium | 2026-07-23 |
+| [Lexicographically Maximum MEX Array](array/lexicographically-maximum-mex-array.py) | Hard | 2026-07-24 |
