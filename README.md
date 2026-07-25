@@ -75,3 +75,4 @@
 | [Maximum Sum of Alternating Subsequence With Distance at Least K](array/maximum-sum-of-alternating-subsequence-with-distance-at-least-k.py) | Hard | 2026-07-22 |
 | [Rotate Non Negative Elements](array/rotate-non-negative-elements.py) | Medium | 2026-07-23 |
 | [Lexicographically Maximum MEX Array](array/lexicographically-maximum-mex-array.py) | Hard | 2026-07-24 |
+| [Multi Source Flood Fill](array/multi-source-flood-fill.py) | Medium | 2026-07-25 |
