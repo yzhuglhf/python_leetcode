@@ -76,3 +76,4 @@
 | [Rotate Non Negative Elements](array/rotate-non-negative-elements.py) | Medium | 2026-07-23 |
 | [Lexicographically Maximum MEX Array](array/lexicographically-maximum-mex-array.py) | Hard | 2026-07-24 |
 | [Multi Source Flood Fill](array/multi-source-flood-fill.py) | Medium | 2026-07-25 |
+| [Maximum Value of Concatenated Binary Segments](array/maximum-value-of-concatenated-binary-segments.py) | Hard | 2026-07-26 |
