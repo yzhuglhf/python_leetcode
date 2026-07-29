@@ -79,3 +79,4 @@
 | [Maximum Value of Concatenated Binary Segments](array/maximum-value-of-concatenated-binary-segments.py) | Hard | 2026-07-26 |
 | [Minimum Operations to Make Array Modulo Alternating I](array/minimum-operations-to-make-array-modulo-alternating-i.py) | Medium | 2026-07-27 |
 | [Maximum Total Subarray Value II](array/maximum-total-subarray-value-ii.py) | Hard | 2026-07-28 |
+| [Minimum Cost to Make Two Binary Strings Equal](string/minimum-cost-to-make-two-binary-strings-equal.py) | Medium | 2026-07-29 |
