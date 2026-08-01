@@ -82,3 +82,4 @@
 | [Minimum Cost to Make Two Binary Strings Equal](string/minimum-cost-to-make-two-binary-strings-equal.py) | Medium | 2026-07-29 |
 | [Maximum Partition Factor](array/maximum-partition-factor.py) | Hard | 2026-07-30 |
 | [Valid Binary Strings With Cost Limit](string/valid-binary-strings-with-cost-limit.py) | Medium | 2026-07-31 |
+| [Longest Arithmetic Sequence After Changing At Most One Element](array/longest-arithmetic-sequence-after-changing-at-most-one-element.py) | Medium | 2026-08-01 |
