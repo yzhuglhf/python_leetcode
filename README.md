@@ -85,3 +85,4 @@
 | [Longest Arithmetic Sequence After Changing At Most One Element](array/longest-arithmetic-sequence-after-changing-at-most-one-element.py) | Medium | 2026-08-01 |
 | [Maximize Cyclic Partition Score](array/maximize-cyclic-partition-score.py) | Hard | 2026-08-02 |
 | [Design Ride Sharing System](array/design-ride-sharing-system.py) | Medium | 2026-08-03 |
+| [Number of Pairs After Increment](array/number-of-pairs-after-increment.py) | Hard | 2026-08-04 |
