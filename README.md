@@ -87,3 +87,4 @@
 | [Design Ride Sharing System](array/design-ride-sharing-system.py) | Medium | 2026-08-03 |
 | [Number of Pairs After Increment](array/number-of-pairs-after-increment.py) | Hard | 2026-08-04 |
 | [Create Grid With Exactly K Paths I](array/create-grid-with-exactly-k-paths-i.py) | Medium | 2026-08-05 |
+| [Count No-Zero Pairs That Sum to N](maths/count-no-zero-pairs-that-sum-to-n.py) | Hard | 2026-08-06 |
