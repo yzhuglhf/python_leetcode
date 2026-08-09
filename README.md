@@ -90,3 +90,4 @@
 | [Count No-Zero Pairs That Sum to N](maths/count-no-zero-pairs-that-sum-to-n.py) | Hard | 2026-08-06 |
 | [Aggregate Two Time Series](array/aggregate-two-time-series.py) | Medium | 2026-08-07 |
 | [Find Nth Smallest Integer With K One Bits](maths/find-nth-smallest-integer-with-k-one-bits.py) | Hard | 2026-08-08 |
+| [Maximum Value of an Alternating Sequence](array/maximum-value-of-an-alternating-sequence.py) | Medium | 2026-08-09 |
