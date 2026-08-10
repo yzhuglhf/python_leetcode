@@ -91,3 +91,4 @@
 | [Aggregate Two Time Series](array/aggregate-two-time-series.py) | Medium | 2026-08-07 |
 | [Find Nth Smallest Integer With K One Bits](maths/find-nth-smallest-integer-with-k-one-bits.py) | Hard | 2026-08-08 |
 | [Maximum Value of an Alternating Sequence](array/maximum-value-of-an-alternating-sequence.py) | Medium | 2026-08-09 |
+| [Minimum Partition Score](array/minimum-partition-score.py) | Hard | 2026-08-10 |
