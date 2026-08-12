@@ -93,3 +93,4 @@
 | [Maximum Value of an Alternating Sequence](array/maximum-value-of-an-alternating-sequence.py) | Medium | 2026-08-09 |
 | [Minimum Partition Score](array/minimum-partition-score.py) | Hard | 2026-08-10 |
 | [Minimum Generations to Target Point](array/minimum-generations-to-target-point.py) | Medium | 2026-08-11 |
+| [Minimum Operations to Equalize Binary String](maths/minimum-operations-to-equalize-binary-string.py) | Hard | 2026-08-12 |
