@@ -96,3 +96,4 @@
 | [Minimum Operations to Equalize Binary String](maths/minimum-operations-to-equalize-binary-string.py) | Hard | 2026-08-12 |
 | [Maximum Manhattan Distance After All Moves](maths/maximum-manhattan-distance-after-all-moves.py) | Medium | 2026-08-13 |
 | [Network Recovery Pathways](array/network-recovery-pathways.py) | Hard | 2026-08-14 |
+| [Minimum Initial Strength to Defeat All Monsters](array/minimum-initial-strength-to-defeat-all-monsters.py) | Medium | 2026-08-15 |
