@@ -98,3 +98,4 @@
 | [Network Recovery Pathways](array/network-recovery-pathways.py) | Hard | 2026-08-14 |
 | [Minimum Initial Strength to Defeat All Monsters](array/minimum-initial-strength-to-defeat-all-monsters.py) | Medium | 2026-08-15 |
 | [Count Ways to Choose Coprime Integers from Rows](array/count-ways-to-choose-coprime-integers-from-rows.py) | Hard | 2026-08-16 |
+| [Minimum Distance Between Three Equal Elements II](array/minimum-distance-between-three-equal-elements-ii.py) | Medium | 2026-08-17 |
