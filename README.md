@@ -100,3 +100,4 @@
 | [Count Ways to Choose Coprime Integers from Rows](array/count-ways-to-choose-coprime-integers-from-rows.py) | Hard | 2026-08-16 |
 | [Minimum Distance Between Three Equal Elements II](array/minimum-distance-between-three-equal-elements-ii.py) | Medium | 2026-08-17 |
 | [Minimum Operations to Achieve At Least K Peaks](array/minimum-operations-to-achieve-at-least-k-peaks.py) | Hard | 2026-08-18 |
+| [Minimum K to Reduce Array Within Limit](array/minimum-k-to-reduce-array-within-limit.py) | Medium | 2026-08-19 |
