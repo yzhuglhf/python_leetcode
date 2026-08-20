@@ -101,3 +101,4 @@
 | [Minimum Distance Between Three Equal Elements II](array/minimum-distance-between-three-equal-elements-ii.py) | Medium | 2026-08-17 |
 | [Minimum Operations to Achieve At Least K Peaks](array/minimum-operations-to-achieve-at-least-k-peaks.py) | Hard | 2026-08-18 |
 | [Minimum K to Reduce Array Within Limit](array/minimum-k-to-reduce-array-within-limit.py) | Medium | 2026-08-19 |
+| [Total Waviness of Numbers in Range II](maths/total-waviness-of-numbers-in-range-ii.py) | Hard | 2026-08-20 |
