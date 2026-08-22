@@ -103,3 +103,4 @@
 | [Minimum K to Reduce Array Within Limit](array/minimum-k-to-reduce-array-within-limit.py) | Medium | 2026-08-19 |
 | [Total Waviness of Numbers in Range II](maths/total-waviness-of-numbers-in-range-ii.py) | Hard | 2026-08-20 |
 | [Count K-th Roots in a Range](maths/count-k-th-roots-in-a-range.py) | Medium | 2026-08-21 |
+| [Minimum Threshold Path With Limited Heavy Edges](binary_search/minimum-threshold-path-with-limited-heavy-edges.py) | Hard | 2026-08-22 |
