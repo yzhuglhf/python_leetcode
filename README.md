@@ -106,3 +106,4 @@
 | [Minimum Threshold Path With Limited Heavy Edges](binary_search/minimum-threshold-path-with-limited-heavy-edges.py) | Hard | 2026-08-22 |
 | [Find Churn Risk Customers](array/find-churn-risk-customers.py) | Medium | 2026-08-23 |
 | [Minimum Flips to Make Binary String Coherent](string/minimum-flips-to-make-binary-string-coherent.py) | Medium | 2026-08-25 |
+| [Maximum Total Value of Covered Indices](array/maximum-total-value-of-covered-indices.py) | Medium | 2026-08-27 |
