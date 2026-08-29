@@ -108,3 +108,4 @@
 | [Minimum Flips to Make Binary String Coherent](string/minimum-flips-to-make-binary-string-coherent.py) | Medium | 2026-08-25 |
 | [Maximum Total Value of Covered Indices](array/maximum-total-value-of-covered-indices.py) | Medium | 2026-08-27 |
 | [Threshold Majority Queries](array/threshold-majority-queries.py) | Hard | 2026-08-28 |
+| [Longest Almost-Palindromic Substring](two_pointers/longest-almost-palindromic-substring.py) | Medium | 2026-08-29 |
