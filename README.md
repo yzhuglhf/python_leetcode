@@ -109,3 +109,4 @@
 | [Maximum Total Value of Covered Indices](array/maximum-total-value-of-covered-indices.py) | Medium | 2026-08-27 |
 | [Threshold Majority Queries](array/threshold-majority-queries.py) | Hard | 2026-08-28 |
 | [Longest Almost-Palindromic Substring](two_pointers/longest-almost-palindromic-substring.py) | Medium | 2026-08-29 |
+| [Minimum Operations to Sort a String](string/minimum-operations-to-sort-a-string.py) | Medium | 2026-08-31 |
