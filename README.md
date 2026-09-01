@@ -110,3 +110,4 @@
 | [Threshold Majority Queries](array/threshold-majority-queries.py) | Hard | 2026-08-28 |
 | [Longest Almost-Palindromic Substring](two_pointers/longest-almost-palindromic-substring.py) | Medium | 2026-08-29 |
 | [Minimum Operations to Sort a String](string/minimum-operations-to-sort-a-string.py) | Medium | 2026-08-31 |
+| [Weighted Sum of a Tree](array/weighted-sum-of-a-tree.py) | Medium | 2026-09-01 |
