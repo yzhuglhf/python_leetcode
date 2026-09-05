@@ -113,3 +113,4 @@
 | [Weighted Sum of a Tree](array/weighted-sum-of-a-tree.py) | Medium | 2026-09-01 |
 | [Count Good Subarrays](array/count-good-subarrays.py) | Hard | 2026-09-02 |
 | [Count Subarrays With Cost Less Than or Equal to K](array/count-subarrays-with-cost-less-than-or-equal-to-k.py) | Medium | 2026-09-03 |
+| [Maximum Valid Pair Sum](array/maximum-valid-pair-sum.py) | Medium | 2026-09-05 |
