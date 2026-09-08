@@ -115,3 +115,4 @@
 | [Count Subarrays With Cost Less Than or Equal to K](array/count-subarrays-with-cost-less-than-or-equal-to-k.py) | Medium | 2026-09-03 |
 | [Maximum Valid Pair Sum](array/maximum-valid-pair-sum.py) | Medium | 2026-09-05 |
 | [Minimum Moves to Reach Target in Grid](maths/minimum-moves-to-reach-target-in-grid.py) | Hard | 2026-09-06 |
+| [Number of ZigZag Arrays I](dp/number-of-zigzag-arrays-i.py) | Hard | 2026-09-08 |
