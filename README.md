@@ -116,3 +116,4 @@
 | [Maximum Valid Pair Sum](array/maximum-valid-pair-sum.py) | Medium | 2026-09-05 |
 | [Minimum Moves to Reach Target in Grid](maths/minimum-moves-to-reach-target-in-grid.py) | Hard | 2026-09-06 |
 | [Number of ZigZag Arrays I](dp/number-of-zigzag-arrays-i.py) | Hard | 2026-09-08 |
+| [Shortest Path With At Most K Consecutive Identical Characters](string/shortest-path-with-at-most-k-consecutive-identical-characters.py) | Medium | 2026-09-09 |
