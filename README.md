@@ -119,3 +119,4 @@
 | [Shortest Path With At Most K Consecutive Identical Characters](string/shortest-path-with-at-most-k-consecutive-identical-characters.py) | Medium | 2026-09-09 |
 | [Process String with Special Operations II](string/process-string-with-special-operations-ii.py) | Hard | 2026-09-10 |
 | [Minimum Operations to Make Binary Palindrome](array/minimum-operations-to-make-binary-palindrome.py) | Medium | 2026-09-11 |
+| [Trionic Array II](array/trionic-array-ii.py) | Hard | 2026-09-12 |
