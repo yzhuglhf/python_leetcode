@@ -120,3 +120,4 @@
 | [Process String with Special Operations II](string/process-string-with-special-operations-ii.py) | Hard | 2026-09-10 |
 | [Minimum Operations to Make Binary Palindrome](array/minimum-operations-to-make-binary-palindrome.py) | Medium | 2026-09-11 |
 | [Trionic Array II](array/trionic-array-ii.py) | Hard | 2026-09-12 |
+| [Count Distinct Ways to Form Target from Two Strings](string/count-distinct-ways-to-form-target-from-two-strings.py) | Hard | 2026-09-14 |
