@@ -122,3 +122,4 @@
 | [Trionic Array II](array/trionic-array-ii.py) | Hard | 2026-09-12 |
 | [Count Distinct Ways to Form Target from Two Strings](string/count-distinct-ways-to-form-target-from-two-strings.py) | Hard | 2026-09-14 |
 | [Find the Smallest Balanced Index](array/find-the-smallest-balanced-index.py) | Medium | 2026-09-15 |
+| [Count Subarrays with Distant Sums](array/count-subarrays-with-distant-sums.py) | Hard | 2026-09-16 |
