@@ -125,3 +125,4 @@
 | [Count Subarrays with Distant Sums](array/count-subarrays-with-distant-sums.py) | Hard | 2026-09-16 |
 | [Sum of Perfect Square Ancestors](array/sum-of-perfect-square-ancestors.py) | Hard | 2026-09-18 |
 | [Count of Unfinished Tasks After Each Shift](array/count-of-unfinished-tasks-after-each-shift.py) | Medium | 2026-09-19 |
+| [Count Fancy Numbers in a Range](maths/count-fancy-numbers-in-a-range.py) | Hard | 2026-09-20 |
