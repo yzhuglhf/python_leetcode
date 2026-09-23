@@ -127,3 +127,4 @@
 | [Count of Unfinished Tasks After Each Shift](array/count-of-unfinished-tasks-after-each-shift.py) | Medium | 2026-09-19 |
 | [Count Fancy Numbers in a Range](maths/count-fancy-numbers-in-a-range.py) | Hard | 2026-09-20 |
 | [Subsequence After One Replacement](two_pointers/subsequence-after-one-replacement.py) | Medium | 2026-09-21 |
+| [Mirror Frequency Distance](array/mirror-frequency-distance.py) | Medium | 2026-09-23 |
