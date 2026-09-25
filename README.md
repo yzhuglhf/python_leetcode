@@ -129,3 +129,4 @@
 | [Subsequence After One Replacement](two_pointers/subsequence-after-one-replacement.py) | Medium | 2026-09-21 |
 | [Mirror Frequency Distance](array/mirror-frequency-distance.py) | Medium | 2026-09-23 |
 | [Lexicographically Largest Power Array](array/lexicographically-largest-power-array.py) | Hard | 2026-09-24 |
+| [Number of Centered Subarrays](array/number-of-centered-subarrays.py) | Medium | 2026-09-25 |
