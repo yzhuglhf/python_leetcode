@@ -130,3 +130,4 @@
 | [Mirror Frequency Distance](array/mirror-frequency-distance.py) | Medium | 2026-09-23 |
 | [Lexicographically Largest Power Array](array/lexicographically-largest-power-array.py) | Hard | 2026-09-24 |
 | [Number of Centered Subarrays](array/number-of-centered-subarrays.py) | Medium | 2026-09-25 |
+| [Maximum Equal Adjacent Pairs After at Most One Replacement](array/maximum-equal-adjacent-pairs-after-at-most-one-replacement.py) | Medium | 2026-09-27 |
