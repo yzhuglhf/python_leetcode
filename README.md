@@ -132,3 +132,4 @@
 | [Number of Centered Subarrays](array/number-of-centered-subarrays.py) | Medium | 2026-09-25 |
 | [Maximum Equal Adjacent Pairs After at Most One Replacement](array/maximum-equal-adjacent-pairs-after-at-most-one-replacement.py) | Medium | 2026-09-27 |
 | [Maximum Bitwise AND After Increment Operations](array/maximum-bitwise-and-after-increment-operations.py) | Hard | 2026-09-28 |
+| [Minimum Energy to Maintain Brightness](array/minimum-energy-to-maintain-brightness.py) | Medium | 2026-09-29 |
