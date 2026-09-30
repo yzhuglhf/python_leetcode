@@ -133,3 +133,4 @@
 | [Maximum Equal Adjacent Pairs After at Most One Replacement](array/maximum-equal-adjacent-pairs-after-at-most-one-replacement.py) | Medium | 2026-09-27 |
 | [Maximum Bitwise AND After Increment Operations](array/maximum-bitwise-and-after-increment-operations.py) | Hard | 2026-09-28 |
 | [Minimum Energy to Maintain Brightness](array/minimum-energy-to-maintain-brightness.py) | Medium | 2026-09-29 |
+| [Longest Subarray Divisible by K with At Most One Negation II](array/longest-subarray-divisible-by-k-with-at-most-one-negation-ii.py) | Hard | 2026-09-30 |
