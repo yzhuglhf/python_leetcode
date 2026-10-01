@@ -134,3 +134,4 @@
 | [Maximum Bitwise AND After Increment Operations](array/maximum-bitwise-and-after-increment-operations.py) | Hard | 2026-09-28 |
 | [Minimum Energy to Maintain Brightness](array/minimum-energy-to-maintain-brightness.py) | Medium | 2026-09-29 |
 | [Longest Subarray Divisible by K with At Most One Negation II](array/longest-subarray-divisible-by-k-with-at-most-one-negation-ii.py) | Hard | 2026-09-30 |
+| [Minimum Deletion Cost to Make All Characters Equal](array/minimum-deletion-cost-to-make-all-characters-equal.py) | Medium | 2026-10-01 |
