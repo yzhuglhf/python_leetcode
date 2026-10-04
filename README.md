@@ -136,3 +136,4 @@
 | [Longest Subarray Divisible by K with At Most One Negation II](array/longest-subarray-divisible-by-k-with-at-most-one-negation-ii.py) | Hard | 2026-09-30 |
 | [Minimum Deletion Cost to Make All Characters Equal](array/minimum-deletion-cost-to-make-all-characters-equal.py) | Medium | 2026-10-01 |
 | [Maximum Valid Split Positions I](array/maximum-valid-split-positions-i.py) | Medium | 2026-10-03 |
+| [Maximum Total Value](array/maximum-total-value.py) | Hard | 2026-10-04 |
