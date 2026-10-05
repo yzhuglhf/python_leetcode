@@ -137,3 +137,4 @@
 | [Minimum Deletion Cost to Make All Characters Equal](array/minimum-deletion-cost-to-make-all-characters-equal.py) | Medium | 2026-10-01 |
 | [Maximum Valid Split Positions I](array/maximum-valid-split-positions-i.py) | Medium | 2026-10-03 |
 | [Maximum Total Value](array/maximum-total-value.py) | Hard | 2026-10-04 |
+| [Count Dominant Nodes in a Binary Tree](tree/count-dominant-nodes-in-a-binary-tree.py) | Medium | 2026-10-05 |
