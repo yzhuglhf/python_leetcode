@@ -138,3 +138,4 @@
 | [Maximum Valid Split Positions I](array/maximum-valid-split-positions-i.py) | Medium | 2026-10-03 |
 | [Maximum Total Value](array/maximum-total-value.py) | Hard | 2026-10-04 |
 | [Count Dominant Nodes in a Binary Tree](tree/count-dominant-nodes-in-a-binary-tree.py) | Medium | 2026-10-05 |
+| [Minimum Number of String Groups Through Transformations](array/minimum-number-of-string-groups-through-transformations.py) | Hard | 2026-10-06 |
