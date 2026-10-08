@@ -140,3 +140,4 @@
 | [Count Dominant Nodes in a Binary Tree](tree/count-dominant-nodes-in-a-binary-tree.py) | Medium | 2026-10-05 |
 | [Minimum Number of String Groups Through Transformations](array/minimum-number-of-string-groups-through-transformations.py) | Hard | 2026-10-06 |
 | [Find the Score Difference in a Game](array/find-the-score-difference-in-a-game.py) | Medium | 2026-10-07 |
+| [Palindromic Subarray Sum](array/palindromic-subarray-sum.py) | Hard | 2026-10-08 |
