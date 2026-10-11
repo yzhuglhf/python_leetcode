@@ -142,3 +142,4 @@
 | [Find the Score Difference in a Game](array/find-the-score-difference-in-a-game.py) | Medium | 2026-10-07 |
 | [Palindromic Subarray Sum](array/palindromic-subarray-sum.py) | Hard | 2026-10-08 |
 | [Maximum Subarray Sum After at Most K Swaps](array/maximum-subarray-sum-after-at-most-k-swaps.py) | Hard | 2026-10-10 |
+| [Minimum Rotations to Dial a Number II](array/minimum-rotations-to-dial-a-number-ii.py) | Medium | 2026-10-11 |
