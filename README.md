@@ -144,3 +144,4 @@
 | [Maximum Subarray Sum After at Most K Swaps](array/maximum-subarray-sum-after-at-most-k-swaps.py) | Hard | 2026-10-10 |
 | [Minimum Rotations to Dial a Number II](array/minimum-rotations-to-dial-a-number-ii.py) | Medium | 2026-10-11 |
 | [Find Category Recommendation Pairs](array/find-category-recommendation-pairs.py) | Hard | 2026-10-14 |
+| [Sum of GCD of Formed Pairs](array/sum-of-gcd-of-formed-pairs.py) | Medium | 2026-10-15 |
