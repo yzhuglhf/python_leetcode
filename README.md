@@ -147,3 +147,4 @@
 | [Sum of GCD of Formed Pairs](array/sum-of-gcd-of-formed-pairs.py) | Medium | 2026-10-15 |
 | [Count Subarrays With Even Odd Ratio II](array/count-subarrays-with-even-odd-ratio-ii.py) | Hard | 2026-10-16 |
 | [Minimum Total Price After Applying Discounts](array/minimum-total-price-after-applying-discounts.py) | Medium | 2026-10-17 |
+| [Minimum Stability Factor of Array](array/minimum-stability-factor-of-array.py) | Hard | 2026-10-18 |
