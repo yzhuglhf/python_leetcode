@@ -150,3 +150,4 @@
 | [Minimum Stability Factor of Array](array/minimum-stability-factor-of-array.py) | Hard | 2026-10-18 |
 | [Last Visited Cell in a Directional Grid](array/last-visited-cell-in-a-directional-grid.py) | Medium | 2026-10-19 |
 | [Minimum Cost Path with Alternating Directions III](array/minimum-cost-path-with-alternating-directions-iii.py) | Hard | 2026-10-20 |
+| [Minimum Total Cost to Process All Elements](array/minimum-total-cost-to-process-all-elements.py) | Medium | 2026-10-21 |
