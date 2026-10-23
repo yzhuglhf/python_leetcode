@@ -152,3 +152,4 @@
 | [Minimum Cost Path with Alternating Directions III](array/minimum-cost-path-with-alternating-directions-iii.py) | Hard | 2026-10-20 |
 | [Minimum Total Cost to Process All Elements](array/minimum-total-cost-to-process-all-elements.py) | Medium | 2026-10-21 |
 | [Kth Smallest Path XOR Sum](array/kth-smallest-path-xor-sum.py) | Hard | 2026-10-22 |
+| [Minimum Operations to Transform Binary String](string/minimum-operations-to-transform-binary-string.py) | Medium | 2026-10-23 |
